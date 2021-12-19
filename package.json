@@ -1,0 +1,24 @@
+{
+  "name": "ecomm-website",
+  "version": "1.0.0",
+  "description": "simple e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoctree/ecomm-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anoctree/ecomm-website/issues"
+  },
+  "homepage": "https://github.com/anoctree/ecomm-website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
