@@ -1,5 +1,4 @@
 
-
 module.exports = {
     getError (errors, prop) {
         try {
