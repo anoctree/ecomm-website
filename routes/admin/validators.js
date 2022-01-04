@@ -3,9 +3,11 @@ const usersRepo = require('../../repositories/users');
 
 module.exports = {
     requireTitle: check('title').trim()
-    .isLength({ min: 5, max: 50 }),
+    .isLength({ min: 5, max: 50 })
+    .withMessage('Must be between 5 & 50 characters'),
     requirePrice: check('price').trim()
-    .toFloat().isFloat({ min: 1 }),
+    .toFloat().isFloat({ min: 1 })
+    .withMessage('Must be between 5 & 50 characters'),
     requireEmail: check('email').trim()
     .normalizeEmail().isEmail().withMessage('Must be a valid email')
     .custom(async (email)=>{
